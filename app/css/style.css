@@ -1,0 +1,45 @@
+.camera-enter {
+    animation-name: enter;
+    animation-duration: 2s;
+    position: relative;
+    left: 0%;
+}
+.camera-show{
+    animation-name: opacity_effect;
+    animation-duration: 2s;
+    opacity: 100;
+    position: relative;
+}
+.display-none{
+	display: none;
+}
+.position-relatvie{
+    position: relative;
+}
+.opacity_zero{
+	opacity: 0;
+}
+.flash-show{
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:2;
+    background-color:white
+}
+.flash-hide{
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:2;
+    background-color:white;
+    display:none;
+}
+/* Standard syntax */
+@keyframes enter {
+    from {left:100%}
+    to {left:0%}
+}
+@keyframes opacity_effect {
+    from {opacity: 0}
+    to {opacity: 100;}
+}
